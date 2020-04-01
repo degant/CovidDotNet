@@ -1,10 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net461;netcoreapp2.1;netcoreapp3.0;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <files>
+      <file src="bin\Release\net461\CovidDotNet.dll" target="lib\net461\CovidDotNet.dll" />
+      <file src="bin\Release\netstandard2.0\CovidDotNet.dll" target="lib\netstandard2.0\CovidDotNet.dll" />
+      <file src="bin\Release\netcoreapp3.0\CovidDotNet.dll" target="lib\netcoreapp3.0\CovidDotNet.dll"/>
+    </files>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>1701;1702;1705;1591;1574;1572;1573;419</NoWarn>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageId>CovidDotNet</PackageId>
+    <Description>Dot Net Client for Covid APIs</Description>
+    <Version>0.0.0.1</Version>
+    <Authors></Authors>
+    <Company></Company>
+    <RepositoryUrl></RepositoryUrl>
+    <PackageTags>Covid</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Copyright>Copyright 2020</Copyright>
+    <PackageReleaseNotes>
+      INSERT ANY PACKAGE RELEASE NOTES
+    </PackageReleaseNotes>
+    <PackageProjectUrl>INSERT REPO URL IN HERE</PackageProjectUrl>
     <CodeAnalysisRuleSet>..\Rules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
