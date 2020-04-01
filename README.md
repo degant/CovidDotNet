@@ -1,7 +1,7 @@
 [![Nuget](https://img.shields.io/nuget/v/CovidDotNet?color=orange)](https://www.nuget.org/packages/CovidDotNet)
 
 # CovidDotNet
-CovidDotNet is a C# client for using the Coronavirus Tracking APIs by [@ExpDev07](https://github.com/ExpDev07/) (https://github.com/ExpDev07/coronavirus-tracker-api). 
+CovidDotNet is a C# client for using the Coronavirus Tracking APIs by [@ExpDev07](https://github.com/ExpDev07/) (https://github.com/ExpDev07/coronavirus-tracker-api). The nuget package targets .NET Standard so it supports both .NET Core (> 2.1) and .NET framework (> 4.6).
 
 
 The aim of the client is to help speed up the development time for anyone looking to access data from the tracking APIs. The client 
