@@ -1,5 +1,3 @@
-using System;
-using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -31,9 +29,12 @@ namespace CovidDotNet.Tests
         public async Task GetLocationAsync()
         {
             CovidClient c = new CovidClient();
-            var location = await c.GetLocationAsync(12);
+            var location = await c.GetLocationAsync(12, includeTimeline: true);
             Assert.NotNull(location);
             Assert.Equal(12, location.Id);
+            Assert.NotNull(location.Timelines);
+            Assert.NotNull(location.Timelines.Confirmed);
+            Assert.NotEmpty(location.Timelines.Confirmed.History);
         }
     }
 }

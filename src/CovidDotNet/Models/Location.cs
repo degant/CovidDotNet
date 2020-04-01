@@ -13,7 +13,7 @@ namespace CovidDotNet.Models
         [JsonProperty("country_code")]
         public string CountryCode { get; set; }
 
-        [JsonProperty("country_population")]
+        [JsonProperty("country_population", NullValueHandling = NullValueHandling.Ignore)]
         public long CountryPopulation { get; set; }
 
         [JsonProperty("province")]

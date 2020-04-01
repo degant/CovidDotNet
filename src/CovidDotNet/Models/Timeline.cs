@@ -1,4 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿using CovidDotNet.Core;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
+using System.Collections.Generic;
 
 namespace CovidDotNet.Models
 {
@@ -8,6 +12,10 @@ namespace CovidDotNet.Models
         public long Latest { get; set; }
 
         [JsonProperty("timeline")]
-        public TimelineInfo TimelineInfo { get; set; }
+        [JsonConverter(typeof(HistoricalDataConverter))]
+        public List<HistoricalDataPoint> History { get; set; }
+
+        [JsonExtensionData]
+        private IDictionary<string, JToken> AdditionalProperties;
     }
 }

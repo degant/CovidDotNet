@@ -12,7 +12,7 @@
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageId>CovidDotNet</PackageId>
     <Description>Dot Net Client for Covid APIs</Description>
-    <Version>0.0.0.1</Version>
+    <Version>0.1</Version>
     <Authors></Authors>
     <Company></Company>
     <RepositoryUrl></RepositoryUrl>
@@ -23,7 +23,7 @@
       INSERT ANY PACKAGE RELEASE NOTES
     </PackageReleaseNotes>
     <PackageProjectUrl>INSERT REPO URL IN HERE</PackageProjectUrl>
-    <CodeAnalysisRuleSet>..\Rules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\..\Rules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <ItemGroup>

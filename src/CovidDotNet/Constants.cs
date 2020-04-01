@@ -21,7 +21,7 @@ namespace CovidDotNet
                 internal const string CountryCode = "country_code";
                 internal const string Province = "province";
                 internal const string County = "county";
-                internal const string ShowTimelines = "timelines";
+                internal const string IncludeTimelines = "timelines";
             }
         }
     }
