@@ -15,6 +15,7 @@ namespace CovidDotNet
         {
             var request = new RestRequest(Constants.Apis.Latest, Method.GET);
             AddDataSourceIfPresent(request, source);
+
             var response = await this.client.ExecuteAsync<LatestResponse>(request);
             ThrowOnFailure(response);
 
